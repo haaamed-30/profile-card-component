@@ -1,0 +1,181 @@
+/* Start Variables */
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-bule: hsl(229, 23%, 23%);
+    --Dark-bule: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--Dark-cyan);
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* End Global Rules */
+/* Start Card */
+.top {
+    position: absolute;
+    width: 978px;
+    height: 976px;
+    left: -204.71px;
+    top: -669.84px;
+}
+.bottom {
+    position: absolute;
+    width: 978px;
+    height: 976px;
+    left: 699.16px;
+    top: 374.16px;
+}
+.card {
+    position: absolute;
+    width: 350px;
+    height: 374px;
+    left: 545px;
+    top: 173px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+.card .image {
+    background-image: url("../images/bg-pattern-card.svg");
+    background-size: cover;
+    width: 350px;
+    height: 140px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card .image img {
+    border-radius: 50%;
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: calc(50% - 96px/2);
+    top: calc(50% - 96px/2 - 47px);
+    border: 5px solid #ffffff;
+}
+.card .heading {
+    position: absolute;
+    left: 30.86%;
+    right: 30.57%;
+    top: 56.68%;
+    bottom: 37.17%;
+}
+.card .heading h3 {
+    position: absolute;
+    height: 18px;
+    left: 0%;
+    right: 22.96%;
+    top: calc(50% - 18px/2 - 2.5px);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--Very-bule);
+}
+.card .heading .nab {
+    position: absolute;
+    height: 18px;
+    left: 83.7%;
+    right: 0%;
+    top: calc(50% - 18px/2 - 2.5px);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--Dark-bule);
+}
+.card .text {
+position: absolute;
+height: 14px;
+left: 42.86%;
+right: 42.86%;
+top: calc(50% - 14px/2 + 63px);
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 14px;
+text-align: center;
+color: var(--Dark-bule);
+
+}
+.card hr {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 76.2%;
+    bottom: 23.53%;
+    border: 1px solid #E8E9EC;
+}
+.card .rank-number {
+    position: absolute;
+    width: 249px;
+    height: 40px;
+    left: 47px;
+    top: 310px;
+}
+.card .rank-number h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--Very-bule);
+}
+.card .rank-number .followers {
+    position: absolute;
+    height: 18px;
+    left: 7.34%;
+    top: calc(50% - 18px/2 - 11px);
+}
+.card .rank-number .likes {
+    position: absolute;
+    height: 18px;
+    left: 1.06%;
+    right: 1.06%;
+    top: calc(50% - 18px/2 - 11px);
+}
+.card .rank-number .photos {
+    position: absolute;
+    height: 18px;
+    right: 5.81%;
+    top: calc(50% - 18px/2 - 11px);  
+}
+.card .rank-number span {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: var(--Dark-bule);
+}
+.card .rank-number .follow {
+    position: absolute;
+    height: 10px;
+    left: 2.54%;
+    top: calc(50% - 10px/2 + 12px);
+}
+.card .rank-number .like {
+    position: absolute;
+    height: 10px;
+    left: 19.15%;
+    right: 19.15%;
+    top: calc(50% - 10px/2 + 12px);
+}
+.card .rank-number .photo {
+    position: absolute;
+    height: 18px;
+    right: 5.81%;
+    top: calc(50% - 18px/2 - -17px);
+}
+/* End card */
