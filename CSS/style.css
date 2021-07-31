@@ -21,12 +21,23 @@ body {
 }
 /* End Global Rules */
 /* Start Card */
+.land {
+    width: 1440px;
+    height: 667px;
+}
+@media (max-width: 767px) {
+    .land {
+        width: 375px;
+        height: 720px;
+    }
+}
 .top {
     position: absolute;
     width: 978px;
     height: 976px;
-    left: -204.71px;
-    top: -669.84px;
+    left: -267.71px;
+    top: -521.84px;
+    transform: rotate(0deg);
 }
 .bottom {
     position: absolute;
@@ -34,6 +45,21 @@ body {
     height: 976px;
     left: 699.16px;
     top: 374.16px;
+}
+@media (max-width: 767px) {
+    .land .top {
+        width: 622px;
+        height: 621px;
+        left: 31.35px;
+        top: -224.97px;
+    }
+    .land .bottom {
+        position: absolute;
+        width: 622px;
+        height: 671px;
+        left: 680.65px;
+        top: 452px;
+    }
 }
 .card {
     position: absolute;
@@ -44,6 +70,11 @@ body {
     border-radius: 15px;
     background-color: #ffffff;
 }
+@media (max-width: 767px) {
+    .card {
+      width: 100%;
+    }
+}
 .card .image {
     background-image: url("../images/bg-pattern-card.svg");
     background-size: cover;
@@ -51,6 +82,11 @@ body {
     height: 140px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+@media (max-width: 767px) {
+    .card .image{
+      width: 100%;
+    }
 }
 .card .image img {
     border-radius: 50%;
@@ -80,6 +116,7 @@ body {
     line-height: 18px;
     text-align: center;
     color: var(--Very-bule);
+    margin-top: -5px;
 }
 .card .heading .nab {
     position: absolute;
@@ -93,6 +130,7 @@ body {
     line-height: 18px;
     text-align: center;
     color: var(--Dark-bule);
+    margin-top: -5px;
 }
 .card .text {
 position: absolute;
@@ -106,7 +144,7 @@ font-size: 14px;
 line-height: 14px;
 text-align: center;
 color: var(--Dark-bule);
-
+margin-top: -5px;
 }
 .card hr {
     position: absolute;
@@ -122,6 +160,8 @@ color: var(--Dark-bule);
     height: 40px;
     left: 47px;
     top: 310px;
+    margin: 5px;
+    padding: 20px;
 }
 .card .rank-number h4 {
     font-style: normal;
@@ -134,8 +174,9 @@ color: var(--Dark-bule);
 .card .rank-number .followers {
     position: absolute;
     height: 18px;
-    left: 7.34%;
+    left: 2.34%;
     top: calc(50% - 18px/2 - 11px);
+    padding-right: 20px;
 }
 .card .rank-number .likes {
     position: absolute;
@@ -147,7 +188,7 @@ color: var(--Dark-bule);
 .card .rank-number .photos {
     position: absolute;
     height: 18px;
-    right: 5.81%;
+    right: 0.81%;
     top: calc(50% - 18px/2 - 11px);  
 }
 .card .rank-number span {
@@ -162,7 +203,7 @@ color: var(--Dark-bule);
 .card .rank-number .follow {
     position: absolute;
     height: 10px;
-    left: 2.54%;
+    left: -2.46%;
     top: calc(50% - 10px/2 + 12px);
 }
 .card .rank-number .like {
@@ -175,7 +216,28 @@ color: var(--Dark-bule);
 .card .rank-number .photo {
     position: absolute;
     height: 18px;
-    right: 5.81%;
+    right: 0.81%;
     top: calc(50% - 18px/2 - -17px);
 }
 /* End card */
+/* Start Footer */
+.attribution {
+    position: absolute;
+    top: 850px;
+    left: 470px;
+    background-color: white;
+    padding: 20px;
+    color: var(--Dark-bule);
+    border-radius: 15px;
+}
+.attribution a {
+    text-decoration: none;
+    color: var(--Very-bule);
+    font-weight: 700;
+}
+@media (max-width: 767px) {
+    .attribution {
+        display: none;
+    }
+}
+/* End Footer */
